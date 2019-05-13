@@ -31,7 +31,18 @@ namespace Lab11
                 movies.Add(new Movie("Animated", "Moana"));
                 movies.Add(new Movie("Animated", "Frozen"));
 
-                Movie.GetMovie(userInput, movies);
+                
+
+                if (userInput == "Scifi" || userInput == "Animated" || userInput == "Horror" || userInput == "Drama")
+                {
+                    Movie.GetMovie(userInput, movies);
+                }
+                else
+                {
+                    Console.WriteLine("That is not a valid selection, please choose either SciFi, Fantasy, Horror, or Action.");
+                    userInput = Console.ReadLine();
+                }
+            
 
                 Console.WriteLine("Would you like to continue?" + "(Y/N)");
 

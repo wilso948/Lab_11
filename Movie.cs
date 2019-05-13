@@ -34,6 +34,8 @@ namespace Lab11
                 {
                     Console.WriteLine(movie._title);
                 }
+
+
            
         }
     }
